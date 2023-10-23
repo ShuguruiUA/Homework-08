@@ -5,8 +5,10 @@ from datetime import datetime
 date = '2021-05-27 17:08:34.149Z'
 
 format_date = datetime.fromisoformat(date)
+
+print(type(date))
 format_date = datetime.strftime(format_date,'%A %d %B %Y')
-print(format_date)
+print(type(format_date))
 
 # conv_date = datetime.strptime(date, '%A %d %B %Y')
 # print(conv_date)

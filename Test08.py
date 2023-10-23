@@ -1,11 +1,18 @@
-from datetime import date
+from datetime import datetime
+"""
+Завдання №3
+"""
+date = '2021-05-27 17:08:34.149Z'
 
+format_date = datetime.fromisoformat(date)
+format_date = datetime.strftime(format_date,'%A %d %B %Y')
+print(format_date)
+
+# conv_date = datetime.strptime(date, '%A %d %B %Y')
+# print(conv_date)
 
 """
 Завдання №2
-"""
-"""
-
 """
 """
 month_dict = {

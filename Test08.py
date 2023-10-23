@@ -4,6 +4,10 @@ from datetime import date
 """
 Завдання №2
 """
+"""
+
+"""
+"""
 month_dict = {
     1: 31,
     2: 28,
@@ -19,22 +23,35 @@ month_dict = {
     12: 31,
 }
 month = 2
-year = 12
+year = 2024
 d1 = date(year,month,1)
 def leap_year(year: int):
     if (year % 400 == 0) and (year % 100 == 0):
         print(f'{year} is a leap year')
+        return True
     elif (year %4 == 0) and (year % 100 != 0):
         print(f'{year} is a leap year')
+        return True
     else:
-        print(f'{year} is no a leap year')
+        print(f'{year} is not a leap year')
+        return False
+    
+if leap_year(year) == False:   
+    print(f"{month} has {month_dict.get(month)} days11")
+elif month == 2:
+    print(f'{month} has a 29 days')
+else:
+    print(f"{month} has {month_dict.get(month)} days")
 
 
-leap_year(1985)
+#leap_year(1985)
+"""
 """
 Завдання №1
 """
 """
+
+
 current_date = datetime.now()
 
 date = datetime(year=2021, month=10, day=9)

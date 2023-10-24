@@ -1,18 +1,25 @@
 from datetime import datetime
+
+
+
+
+
 """
 Завдання №3
 """
+"""
 date = '2021-05-27 17:08:34.149Z'
 
-format_date = datetime.fromisoformat(date)
+#format_date = datetime.strftime(date,"%Y-%m-%d %H:%M:%S.%f.%z")
 
-print(type(date))
-format_date = datetime.strftime(format_date,'%A %d %B %Y')
-print(type(format_date))
-
+s = '10 January 2020'
+str_to_iso = datetime.strptime(date, '%G-%m-%V%u %H:%M:%S.%f%z')
+print(str_to_iso)
+iso_to_str = datetime.strftime(str_to_iso, '%A %d %B %Y')
+print(iso_to_str)
 # conv_date = datetime.strptime(date, '%A %d %B %Y')
 # print(conv_date)
-
+"""
 """
 Завдання №2
 """

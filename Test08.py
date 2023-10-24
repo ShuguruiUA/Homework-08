@@ -1,6 +1,16 @@
 from datetime import datetime
+from random import randrange, randint
+"""
+Завдання №4
+"""
+min = 1
+max = 36
+quantity = 6
 
-
+my_list = list()
+if min >= 1 and max <= 1000 and min < quantity < max:
+    while quantity:
+        my_list.append(randint(min,max))
 
 
 

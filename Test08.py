@@ -12,7 +12,7 @@ if min >= 1 and max <= 1000 and min < quantity < max:
     while quantity:
         my_list.append(randint(min,max))
 
-
+1
 
 """
 Завдання №3

@@ -1,7 +1,14 @@
 from datetime import datetime
-from random import randrange, randint
+from random import randrange, sample
+
+from decimal import Decimal, getcontext
+
+getcontext().prec = 6
+print(Decimal(1) / Decimal(7))  # Decimal('0.142857')
+
 """
 Завдання №4
+"""
 """
 min = 1
 max = 36
@@ -9,11 +16,15 @@ quantity = 6
 
 my_list = list()
 if min >= 1 and max <= 1000 and min < quantity < max:
-    while quantity:
-        my_list.append(randint(min,max))
+    while len(my_list) <= max:
+        my_list.append(randrange(min,max))
+    #print(choice(my_list, quantity=6))
+    print(sample(my_list, k=6))
+# while quantity <= quantity+1:
+#     print(randint(min,max))
 
-1
-
+print(randrange(1,36))
+"""
 """
 Завдання №3
 """

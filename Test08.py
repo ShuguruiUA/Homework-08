@@ -1,19 +1,32 @@
-from datetime import datetime
-from random import randrange, sample
+from datetime import datetime,date,timedelta
 
-from decimal import Decimal, getcontext
+# test = date(2023,10,30)
 
-getcontext().prec = 6
+# week_day = test.strftime('%A')
+# print(week_day)
 
-print(Decimal(1) / Decimal(7))  # Decimal('0.142857')
-a = float(Decimal(3))
-print(a)
-b = float(Decimal(5))
-c = float(77)
-d = float(23)
-sum = (Decimal(a+b+c+d+Decimal(0.57))/Decimal(6))
-#sum = (Decimal((Decimal(a))+Decimal(b)+Decimal(c)+Decimal(d)+Decimal(0.57))/Decimal(6))
-print(sum)
+work_days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+print(work_days[0])
+print(work_days[1])
+print(work_days[2])
+print(work_days[3])
+print(work_days[4])
+
+# from random import randrange, sample
+
+# from decimal import Decimal, getcontext
+
+# getcontext().prec = 6
+
+# print(Decimal(1) / Decimal(7))  # Decimal('0.142857')
+# a = float(Decimal(3))
+# print(a)
+# b = float(Decimal(5))
+# c = float(77)
+# d = float(23)
+# sum = (Decimal(a+b+c+d+Decimal(0.57))/Decimal(6))
+# #sum = (Decimal((Decimal(a))+Decimal(b)+Decimal(c)+Decimal(d)+Decimal(0.57))/Decimal(6))
+# print(sum)
 """
 Завдання №4
 """

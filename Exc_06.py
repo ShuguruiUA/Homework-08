@@ -3,14 +3,14 @@ from decimal import Decimal, getcontext
 
 def decimal_average(number_list, signs_count):
     getcontext().prec = signs_count
-    sum_num = 0
+    sum_num = Decimal(0.0)
     for num in number_list:
-        sum_num += float(Decimal(num))
+        sum_num += Decimal(num)
         #print(num)
-        #print(sum_num)
+        #print(Decimal(sum_num))
     result = float(Decimal(sum_num)/Decimal(len(number_list)))
-    print(result)
-    return float(Decimal(result))
+    
+    return Decimal(result)
 
 print(decimal_average([3, 5, 77, 23, 0.57], 6))
 print(decimal_average([4.5788689699797, 34.7576578697964, 86.8877666656633, 12], 6))

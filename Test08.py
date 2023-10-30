@@ -1,10 +1,23 @@
-from datetime import datetime
-from random import randrange, sample
+from datetime import datetime, timedelta, date
 
-from decimal import Decimal, getcontext
+users = [
+        {"name": "Jan Koum", "birthday": datetime(1976, 1, 1).date()},
+    ]
+for user in users:
+    a = user.get('name')
+    b = user.get('birthday')
+    print(a)
+    print(b)
 
-getcontext().prec = 6
-print(Decimal(1) / Decimal(7))  # Decimal('0.142857')
+
+#calculate(list1)
+# from datetime import datetime
+# from random import randrange, sample
+
+# from decimal import Decimal, getcontext
+
+# getcontext().prec = 6
+# print(Decimal(1) / Decimal(7))  # Decimal('0.142857')
 
 """
 Завдання №4
